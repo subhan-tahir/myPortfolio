@@ -13,7 +13,15 @@ import { FaBootstrap } from "react-icons/fa";
 import { TfiMicrosoftAlt } from "react-icons/tfi";
 import { SiAxios } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
-
+import { SiMongodb } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+import { DiNodejs } from "react-icons/di";
+import MaterialLogo from './assets/material-ui.svg'
+import contextLogo from './assets/contextAPI.png'
+import reduxLogo from './assets/redux.svg'
+import postmanLogo from './assets/postman.svg'
+import githubLogo from './assets/github.jpg'
+import gitLogo from './assets/git.png'
 //Navbar menu items
 
 let menu = [
@@ -76,6 +84,22 @@ let mySkills = [
         title:'React JS',
         
     },
+    {
+        img:SiMongodb ,
+        title:'Mongo DB',
+        
+    },
+    {
+        img:DiNodejs ,
+        title:'Node Js',
+        
+    },
+
+    {
+        img:SiExpress,
+        title:'Express Js',
+        
+    },
 
   {
         img:RiTailwindCssFill ,
@@ -83,21 +107,56 @@ let mySkills = [
         
     },
     {
-        img:FaBootstrap ,
+        img:FaBootstrap ,//React Component
         title:'Bootstrap',
         
     },
+    {
+        img: MaterialLogo,//Image Path
+        title:'Material UI',
+        
+    },
+
     
     {
         img:SiAxios,
         title:'Axios',
         
     },
+
+    {
+        img:reduxLogo,
+        title:'Redux toolkit',
+        
+    },
+    {
+        img:contextLogo,
+        title:'Context API',
+        
+    },
+    {
+        img:postmanLogo,
+        title:'Postman',
+        
+    },
+    {
+        img:gitLogo,
+        title:'git',
+        
+    },
+    {
+        img:githubLogo,
+        title:'github',
+        
+    },
+
+
   {
         img:TfiMicrosoftAlt ,
         title:'MS Office',
         
     },
+ 
 ];
 
 let myWork = [
