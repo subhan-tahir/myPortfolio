@@ -32,14 +32,7 @@ const App = () => {
       />
 
       <div className='h-screen overflow-x-clip'>
-        <Navbar
-          id="top"
-          // handleClick={handleLinkClick}
-          // toggleHandler={handleShow}
-          // showIcon={icon}
-          // sideBar={show}
-
-        />
+        <Navbar id="top" />
 
         <div>
           <PortfolioPage />
