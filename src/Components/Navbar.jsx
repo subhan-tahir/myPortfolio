@@ -19,7 +19,8 @@ const Navbar = () => {
             {menu.map((item, index) => (
               <a href={item.link} key={index}>
                 <li className="cursor-pointer  group relative">{item.li}
-                <span className="nav-item-underline absolute left-0 bottom-0 w-0 h-[3px] bg-white transition-all origin-right ease-in-out rounded-sm scale-x-0 duration-300 transform  group-hover:scale-x-100 group-hover:w-full group-hover:origin-left" ></span>
+                <span className="nav-item-underline absolute left-0 bottom-0 w-0 h-[3px] bg-white transition-all origin-right ease-in-out rounded-sm duration-300 transform scale-x-0 group-hover:scale-x-100 group-hover:w-full group-hover:origin-left"></span>
+
                 </li>
               </a>
             ))}

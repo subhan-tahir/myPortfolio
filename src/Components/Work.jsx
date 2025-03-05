@@ -1,8 +1,6 @@
 import React from 'react';
 import logo from "../assets/logo.png";
 import { myWork } from '../script';
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css"; 
@@ -26,13 +24,13 @@ const Work = () => {
         settings: {
           slidesToShow: 1,
         }
-      }
+      },
     ]
   };
 
   return (
     <>
-       <div className='flex flex-col  items-center p-4 relative' id="work"> 
+       <div className='flex flex-col  items-center p-4 relative mb-[80px]' id="work"> 
         <div className='text-2xl sm:text-4xl sm:my-12 my-14  text-center flex gap-2 items-center justify-center text-black'>
           <img src={logo} alt="Logo" className='w-[35px] h-[35px] object-contain' />
           <p className='flex gap-2'>My 

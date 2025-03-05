@@ -27,22 +27,22 @@ import gitLogo from './assets/git.png'
 let menu = [
 
     {
-        li:"Skills",
-        link:"#skills",
+        li: "Skills",
+        link: "#skills",
     },
     {
-        li:"Work",
-        link:"#work",
+        li: "Work",
+        link: "#work",
     },
     {
-        li:"Achivements",
-        link:"#",
+        li: "Achivements",
+        link: "#",
     },
     {
-        li:"Contact",
-        link:"#contact",
+        li: "Contact",
+        link: "#contact",
     },
-  
+
 ];
 let buttons = [
     {
@@ -50,15 +50,15 @@ let buttons = [
         link: 'https://wa.me/+923198991271',
     },
     {
-        icon: FaLinkedin ,
+        icon: FaLinkedin,
         link: 'https://www.linkedin.com/in/subhan-tahir-471215307/',
     },
     {
-        icon: MdEmail ,
+        icon: MdEmail,
         link: 'mailto:subhantahir2006@gmail.com',
     },
     {
-        icon: FaGithub ,
+        icon: FaGithub,
         link: 'https://github.com/subhan-tahir',
     },
 
@@ -67,152 +67,159 @@ let buttons = [
 
 let mySkills = [
     {
-        img:FaHtml5 ,
-        title:'HTML 5', 
+        img: FaHtml5,
+        title: 'HTML 5',
     },
     {
-        img:FaCss3Alt,
-        title:'CSS 3', 
+        img: FaCss3Alt,
+        title: 'CSS 3',
     },
     {
-        img:IoLogoJavascript,
-        title:'JavaScript',
-        
+        img: IoLogoJavascript,
+        title: 'JavaScript',
+
     },
     {
-        img:FaReact ,
-        title:'React JS',
-        
+        img: FaReact,
+        title: 'React JS',
+
     },
     {
-        img:SiMongodb ,
-        title:'Mongo DB',
-        
+        img: SiMongodb,
+        title: 'Mongo DB',
+
     },
     {
-        img:DiNodejs ,
-        title:'Node Js',
-        
+        img: DiNodejs,
+        title: 'Node Js',
+
     },
 
     {
-        img:SiExpress,
-        title:'Express Js',
-        
+        img: SiExpress,
+        title: 'Express Js',
+
     },
 
-  {
-        img:RiTailwindCssFill ,
-        title:'Tailwind CSS',
-        
+    {
+        img: RiTailwindCssFill,
+        title: 'Tailwind CSS',
+
     },
     {
-        img:FaBootstrap ,//React Component
-        title:'Bootstrap',
-        
+        img: FaBootstrap,//React Component
+        title: 'Bootstrap',
+
     },
     {
         img: MaterialLogo,//Image Path
-        title:'Material UI',
-        
-    },
+        title: 'Material UI',
 
-    
-    {
-        img:SiAxios,
-        title:'Axios',
-        
-    },
-
-    {
-        img:reduxLogo,
-        title:'Redux toolkit',
-        
-    },
-    {
-        img:contextLogo,
-        title:'Context API',
-        
-    },
-    {
-        img:postmanLogo,
-        title:'Postman',
-        
-    },
-    {
-        img:gitLogo,
-        title:'git',
-        
-    },
-    {
-        img:githubLogo,
-        title:'github',
-        
     },
 
 
-  {
-        img:TfiMicrosoftAlt ,
-        title:'MS Office',
-        
+    {
+        img: SiAxios,
+        title: 'Axios',
+
     },
- 
+
+    {
+        img: reduxLogo,
+        title: 'Redux toolkit',
+
+    },
+    {
+        img: contextLogo,
+        title: 'Context API',
+
+    },
+    {
+        img: postmanLogo,
+        title: 'Postman',
+
+    },
+    {
+        img: gitLogo,
+        title: 'git',
+
+    },
+    {
+        img: githubLogo,
+        title: 'github',
+
+    },
+
+
+    {
+        img: TfiMicrosoftAlt,
+        title: 'MS Office',
+
+    },
+
 ];
 
 let myWork = [
+
     {
-        title:"To-Do List",
-        description:"A simple and efficient to-do list application built using HTML, CSS and JavaScript.",
-        btn:'live Preview',
-        link:'https://subhan-tahir.github.io/Project-todo-app/',
+        title: "Greener Pakistan",
+        description: "Greener Pakistan is a group of solar energy experts offering a wide range of solar energy solutions, including underground cabling services. I developed their website using React JS and Tailwind css",
+        btn: 'live Preview',
+        link: 'https://greener-pakistan.netlify.app/',
     },
     {
-        title:"Digital Clock",
-        description:"A sleek and modern digital clock built using HTML, CSS and JavaScript.",
-        btn:'live Preview',
-        
+        title: "To-Do List",
+        description: "A simple and efficient to-do list application built using HTML, CSS and JavaScript.",
+        btn: 'live Preview',
+        link: 'https://subhan-tahir.github.io/Project-todo-app/',
     },
     {
-        title:"Form Validation",
-        description:"A simple and effective form validation built using HTML, CSS and JavaScript.",
-        btn:'live Preview',
-        link:'https://subhan-tahir.github.io/javascript-form/',
+        title: "Digital Clock",
+        description: "A sleek and modern digital clock built using HTML, CSS and JavaScript.",
+        btn: 'live Preview',
+
     },
     {
-        title:"Currency Converter",
-        description:"A effective and modern currency converter built using HTML, CSS JavaScript and API.",
-        btn:'live Preview',
-        link:'https://subhan-tahir.github.io/currency-converter/',
+        title: "Form Validation",
+        description: "A simple and effective form validation built using HTML, CSS and JavaScript.",
+        btn: 'live Preview',
+        link: 'https://subhan-tahir.github.io/javascript-form/',
     },
     {
-        title:"BMI Calculator",
-        description:"A effective and modern BMI-calculator to calculate your BMI built using HTML, CSS and JavaScript.",
-        btn:'live Preview',
-        link:'https://subhan-tahir.github.io/BMI-calculator/',
+        title: "Currency Converter",
+        description: "A effective and modern currency converter built using HTML, CSS JavaScript and API.",
+        btn: 'live Preview',
+        link: 'https://subhan-tahir.github.io/currency-converter/',
     },
     {
-        title:"Transition Website",
-        description:"A complete and modern transition website  built using HTML, CSS JavaScript and Bootstap",
-        btn:'live Preview',
-        link:'https://subhan-tahir.github.io/Transition-website/',
+        title: "BMI Calculator",
+        description: "A effective and modern BMI-calculator to calculate your BMI built using HTML, CSS and JavaScript.",
+        btn: 'live Preview',
+        link: 'https://subhan-tahir.github.io/BMI-calculator/',
     },
     {
-        title:"NIC Website",
-        description:"A complete and modern NIC website  built using HTML, CSS JavaScript and Bootstap",
-        btn:'live Preview',
-        link:'https://subhan-tahir.github.io/NIC-Project/',
+        title: "Transition Website",
+        description: "A complete and modern transition website  built using HTML, CSS JavaScript and Bootstap",
+        btn: 'live Preview',
+        link: 'https://subhan-tahir.github.io/Transition-website/',
     },
     {
-        title:"Transition Website",
-        description:"A complete and modern transition website  built using HTML, CSS JavaScript and Bootstap",
-        btn:'live Preview',
-        link:'https://subhan-tahir.github.io/Transition-website/',
+        title: "NIC Website",
+        description: "A complete and modern NIC website  built using HTML, CSS JavaScript and Bootstap",
+        btn: 'live Preview',
+        link: 'https://subhan-tahir.github.io/NIC-Project/',
     },
     {
-        title:"The four'cs",
-        description:"A complete and modern Thefourcs website  built using HTML, CSS JavaScript and Bootstap",
-        btn:'live Preview',
-        link:'https://subhan-tahir.github.io/The-four-cs-1/',
+        title: "Transition Website",
+        description: "A complete and modern transition website  built using HTML, CSS JavaScript and Bootstap",
+        btn: 'live Preview',
+        link: 'https://subhan-tahir.github.io/Transition-website/',
+    },
+    {
+        title: "The four'cs",
+        description: "A complete and modern Thefourcs website  built using HTML, CSS JavaScript and Bootstap",
+        btn: 'live Preview',
+        link: 'https://subhan-tahir.github.io/The-four-cs-1/',
     },
 
 

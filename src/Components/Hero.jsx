@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect, useState, Suspense, lazy } from 'react'
 import helloPic from "../assets/handPic.gif";
-import coderVideo from "../assets/coderVideo.mp4";
 import { buttons } from "../script";
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion'
+import MuiSkeleton from "./mui/MuiSkeleton";
+import HeroVideo from './HeroVideo';
+const MarkdownPreview = lazy(() => delayForDemo(import('./HeroVideo')));
 const Hero = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+
   return (
     <>
       <div className="max-w-full flex gap-5 items-center justify-center flex-wrap-reverse md:flex-nowrap p-4 md:p-12 my-14">
@@ -93,8 +98,15 @@ const Hero = () => {
             delay: 1,
           }}
 
-          className="flex items-center flex-1 justify-center mx-auto min-w-[270px]">
-          <video src={coderVideo} autoPlay loop muted></video>
+          className="flex items-center flex-1 relative justify-center mx-auto min-w-[270px]">
+
+          {isLoading &&
+            <Suspense fallback={<MuiSkeleton />} >
+            </Suspense>
+          }
+
+         <HeroVideo />
+
         </motion.div>
       </div>
     </>

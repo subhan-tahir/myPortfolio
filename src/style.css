@@ -62,3 +62,23 @@ body {
     transform-origin: 0%;
 z-index: 1000;
   }
+
+
+  /* Style the dot container */
+.slick-dots {
+  bottom: -40px !important; /* Adjust the position */
+}
+
+/* Default dots */
+.slick-dots li button:before {
+  font-size: 12px !important; /* Change dot size */
+  color: gray; /* Default dot color */
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Active dot */
+.slick-dots li.slick-active button:before {
+  color: black; /* Active dot color */
+  opacity: 1;
+}
