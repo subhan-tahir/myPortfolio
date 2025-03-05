@@ -32,7 +32,7 @@ const Work = () => {
 
   return (
     <>
-       <div className='h-screen flex flex-col  items-center p-4' id="work"> 
+       <div className='flex flex-col  items-center p-4 relative' id="work"> 
         <div className='text-2xl sm:text-4xl sm:my-12 my-14  text-center flex gap-2 items-center justify-center text-black'>
           <img src={logo} alt="Logo" className='w-[35px] h-[35px] object-contain' />
           <p className='flex gap-2'>My 

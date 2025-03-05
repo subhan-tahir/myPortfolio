@@ -14,7 +14,7 @@ const Skills = () => {
   return (
     <div
       ref={ref}
-      className='sm:h-screen items-center flex flex-col gap-2 max-w-7xl mx-auto sm:mt-28  mt-40 p-4'
+      className='items-center flex flex-col gap-2 max-w-7xl mx-auto sm:mt-28  mt-40 p-4'
       id="skills"
     >
       <div className='text-2xl sm:text-4xl sm:my-12 my-14 text-center flex gap-2 items-center justify-center text-black'>
