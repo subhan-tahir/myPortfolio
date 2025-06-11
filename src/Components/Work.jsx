@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import logo from "../assets/logo.png";
 import { myWork } from "../script";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import  Container  from "./Container";
+import { ThemeContext } from "../context/ThemeContext";
 
 const Work = () => {
+const{mode} = useContext(ThemeContext);
   var settings = {
     dots: true,
     infinite: true,
@@ -36,11 +38,11 @@ const Work = () => {
           className="flex flex-col  items-center p-4 relative mb-[80px]"
           id="work"
         >
-          <div className="text-2xl sm:text-4xl sm:my-12 my-14  text-center flex gap-2 items-center justify-center text-black">
+          <div className="text-2xl sm:text-4xl sm:my-12 my-14  text-center flex gap-2 items-center justify-center ">
             <img
               src={logo}
               alt="Logo"
-              className="w-[35px] h-[35px] object-contain"
+              className={`w-[35px] h-[35px] object-contain ${mode === "dark" ? "invert" : ""}`}
             />
             <p className="flex gap-2">
               My

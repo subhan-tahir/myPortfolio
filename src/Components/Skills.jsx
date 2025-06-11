@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import logo from "../assets/logo.png";
 import { mySkills } from '../script';
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { ThemeContext } from '../context/ThemeContext';
 
 
 const Skills = () => {
+  const {mode} = useContext(ThemeContext  )
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.2,
@@ -17,8 +19,8 @@ const Skills = () => {
       className='items-center flex flex-col gap-2 max-w-7xl mx-auto sm:mt-28  mt-40 p-4'
       id="skills"
     >
-      <div className='text-2xl sm:text-4xl sm:my-12 my-14 text-center flex gap-2 items-center justify-center text-black'>
-        <img src={logo} alt="Logo" className='w-[35px] h-[35px] object-contain' />
+      <div className='text-2xl sm:text-4xl sm:my-12 my-14 text-center flex gap-2 items-center justify-center '>
+        <img src={logo} alt="Logo" className={`w-[35px] h-[35px] object-contain ${mode === "dark" ? "invert" : ""}`} />
         <p className='flex gap-2'>My
           <span className="font-extrabold">Skills</span>
         </p>
@@ -32,7 +34,7 @@ const Skills = () => {
           delay: 0.2,
 
         }}
-      > *
+      > 
         <div className='flex flex-wrap md:gap-12 gap-4 justify-center items-center'>
           {mySkills.map((value, index) => {
             let Icon = value.img;

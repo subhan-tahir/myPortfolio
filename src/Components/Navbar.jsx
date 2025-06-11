@@ -5,15 +5,16 @@ import pdf from "../Muhammad Subhan.pdf";
 import Sidebar from "./Sidebar";
 import { SidebarToggleContext } from "../context/SidebarToggleProvider";
 import Container from "./Container";
-const Navbar = () => {
+import ThemeSwitcher from "./ThemeSwitcher";
+const Navbar = ({mode, toggleTheme}) => {
   const { show, icon, handleShow } = useContext(SidebarToggleContext);
 
   return (
     <>
-      <div className="bg-black w-full flex justify-between items-center text-white p-4 relative">
+      <div className={` bg-black shadow-xl shadow-gray-300 w-full flex justify-between items-center text-white p-4 relative `}>
         <Container className={"flex justify-between items-center"}>
           <div className="flex-1">
-            <h1 className="text-[20px] font-[600]">Muhammad Subhan.</h1>
+            <h1 className={"text-[20px] font-[600]"}>Muhammad Subhan.</h1>
           </div>
           <div className="flex-1">
             <ul className="sm:gap-6 sm:text-[17px] font-[600] font-sans sm:flex hidden">
@@ -27,12 +28,16 @@ const Navbar = () => {
               ))}
             </ul>
           </div>
+          <div className="flex items-center gap-4">
           <div className="sm:flex hidden">
             <a href={pdf} download="Muhammad_Subhan_Resume.pdf ">
               <button className="download-btn    px-10 min-h-[45px] rounded-[5px]  font-bold flex items-center gap-2">
                <span className="flex items-center gap-3">RESUME <MdOutlineFileDownload size={20}/></span> 
               </button>
             </a>
+          </div>
+          {/*theme switcher */}
+          <ThemeSwitcher mode={mode} toggleTheme={toggleTheme}/>
           </div>
 
           {/* hanburger Button for Mobile */}

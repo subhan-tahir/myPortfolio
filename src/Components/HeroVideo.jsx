@@ -1,16 +1,11 @@
 import React from "react";
-import coderVideo from "../assets/coderVideo.mp4";
+import codergif from "../assets/web-coder.gif";
+
 
 const HeroVideo = () => {
   return (
     <>
-      <video
-        src={coderVideo}
-        autoPlay
-        loop
-        muted
-        onLoadedData={() => setIsLoading(false)}
-      ></video>
+     <img src={codergif} />
     </>
   );
 };
