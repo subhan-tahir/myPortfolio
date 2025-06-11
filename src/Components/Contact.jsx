@@ -74,16 +74,16 @@ const Contact = () => {
 
           <div className="py-6 px-12 bg-white rounded-lg">
             <div className="flex sm:flex-row flex-col gap-4 sm:text-4xl text-2xl font-extrabold">
-              <a href="https://wa.me/+923198991271" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/+923702835443" target="_blank" rel="noopener noreferrer">
                 <h1 className="font-semibold">Whatsapp</h1>
               </a>
-              <a href="https://www.linkedin.com/in/subhan-tahir-471215307/" target="_blank">
+              <a href="https://www.linkedin.com/in/muhammad-subhan-tahir-bb9a20368" target="_blank">
                 <h1 className="font-semibold">Linkedin</h1>
               </a>
-              <a href="mailto:subhantahir2006@gmail.com">
+              <a href="mailto:subhantahir430@gmail.com">
                 <h1 className="font-semibold">Email</h1>
               </a>
-              <a href="https://github.com/subhan-tahir" target="_blank">
+              <a href="https://github.com/m-subhan-tahir" target="_blank">
                 <h1 className="font-semibold">Github</h1>
               </a>
             </div>
