@@ -1,15 +1,18 @@
-import React from 'react'
+import React from "react";
 import coderVideo from "../assets/coderVideo.mp4";
 
 const HeroVideo = () => {
-    return (
-        <>
+  return (
+    <>
+      <video
+        src={coderVideo}
+        autoPlay
+        loop
+        muted
+        onLoadedData={() => setIsLoading(false)}
+      ></video>
+    </>
+  );
+};
 
-            <video src={coderVideo} autoPlay loop muted onLoadedData={() => setIsLoading(false)}>
-
-            </video>
-        </>
-    )
-}
-
-export default HeroVideo
+export default HeroVideo;

@@ -64,7 +64,7 @@ const Hero = () => {
                 developer with a strong foundation in creating visually
                 appealing and user-friendly web interfaces. Equipped with a
                 solid understanding of modern web technologies. Proficient in
-                HTML, CSS, JavaScript and React js for building the structure,
+                HTML, CSS, JavaScript, Typescript, Bootstrap, Tailwind css, Node js, Express, MongoDB,  and React js for building the structure,
                 styling, and interactivity of web pages. Familiar with
                 responsive web design principles to ensure websites are
                 accessible and functional on various devices, including

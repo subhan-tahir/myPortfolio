@@ -47,19 +47,19 @@ let menu = [
 let buttons = [
     {
         icon: IoLogoWhatsapp,
-        link: 'https://wa.me/+923198991271',
+        link: 'https://wa.me/+923702835443',
     },
     {
         icon: FaLinkedin,
-        link: 'https://www.linkedin.com/in/subhan-tahir-471215307/',
+        link: 'https://www.linkedin.com/in/muhammad-subhan-tahir-bb9a20368',
     },
     {
         icon: MdEmail,
-        link: 'mailto:subhantahir2006@gmail.com',
+        link: 'mailto:subhantahir430@gmail.com',
     },
     {
         icon: FaGithub,
-        link: 'https://github.com/subhan-tahir',
+        link: 'https://github.com/m-subhan-tahir',
     },
 
 ];
