@@ -4,7 +4,7 @@ import { myWork } from "../script";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Container } from "./Container";
+import  Container  from "./Container";
 
 const Work = () => {
   var settings = {
