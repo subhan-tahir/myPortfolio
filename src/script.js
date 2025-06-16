@@ -150,7 +150,7 @@ let myWork = [
     description:
       "A complete and modern Devop360 website  built using HTML, CSS JavaScript, Bootstap and using gsap for interactivity and animations.",
     btn: "live Preview",
-    link: "https://subhan-tahir.github.io/Devop360-Demo/",
+    link: "https://devop360-demo.netlify.app/",
   },
   {
     title: "React Uber App.",
