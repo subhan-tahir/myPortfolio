@@ -1,13 +1,11 @@
-import React, { useContext } from 'react';
-import logo from "../assets/logo.png";
-import { mySkills } from '../script';
+import React, { useContext } from "react";
+import { mySkills } from "../script";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { ThemeContext } from '../context/ThemeContext';
-
+import { ThemeContext } from "../context/ThemeContext";
+import SectionHeader from "./SectionHeader";
 
 const Skills = () => {
-  const {mode} = useContext(ThemeContext  )
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.2,
@@ -16,15 +14,11 @@ const Skills = () => {
   return (
     <div
       ref={ref}
-      className='items-center flex flex-col gap-2 max-w-7xl mx-auto sm:mt-28  mt-40 p-4'
+      className="items-center flex flex-col gap-2 max-w-7xl mx-auto sm:mt-28  mt-40 p-4"
       id="skills"
     >
-      <div className='text-2xl sm:text-4xl sm:my-12 my-14 text-center flex gap-2 items-center justify-center '>
-        <img src={logo} alt="Logo" className={`w-[35px] h-[35px] object-contain ${mode === "dark" ? "invert" : ""}`} />
-        <p className='flex gap-2'>My
-          <span className="font-extrabold">Skills</span>
-        </p>
-      </div>
+      {/*header */}
+      <SectionHeader title="Skills" />
 
       <motion.div
         initial={{ opacity: 0, y: 200 }}
@@ -32,25 +26,30 @@ const Skills = () => {
         transition={{
           duration: 0.8,
           delay: 0.2,
-
         }}
-      > 
-        <div className='flex flex-wrap md:gap-12 gap-4 justify-center items-center'>
+      >
+        <div className="flex flex-wrap md:gap-12 gap-4 justify-center items-center">
           {mySkills.map((value, index) => {
             let Icon = value.img;
             return (
               <div
                 key={index}
-                className='bg-black border-2 border-black flex flex-col gap-4 justify-around items-center rounded sm:w-40 sm:h-44 w-24 h-32 p-2 cursor-pointer !border-b-8 
-                hover:!bg-stone-50 transition-all duration-300 hover:!text-black text-white group'
+                className="bg-black border-2 border-black flex flex-col gap-4 justify-around items-center rounded sm:w-40 sm:h-44 w-24 h-32 p-2 cursor-pointer !border-b-8 
+                hover:!bg-stone-50 transition-all duration-300 hover:!text-black text-white group"
               >
-                {typeof Icon === 'function' ? (
-                  <Icon className='text-[90px]' />
+                {typeof Icon === "function" ? (
+                  <Icon className="text-[90px]" />
                 ) : (
-                  <img src={Icon} alt={value.title} className="w-16 h-16 filter invert group-hover:filter-none"  />
+                  <img
+                    src={Icon}
+                    alt={value.title}
+                    className="w-16 h-16 filter invert group-hover:filter-none"
+                  />
                 )}
 
-                <p className='text-[18px] font-[500] text-center'>{value.title}</p>
+                <p className="text-[18px] font-[500] text-center">
+                  {value.title}
+                </p>
               </div>
             );
           })}
@@ -60,5 +59,4 @@ const Skills = () => {
   );
 };
 
-
-export default Skills
+export default Skills;
