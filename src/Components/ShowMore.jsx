@@ -6,7 +6,10 @@ const ShowMore = ({ showProjects, totalProjects, onClick }) => {
 
   return (
     <button
-      onClick={onClick}
+      onClick={(e) => {
+        e.preventDefault();
+        onClick();
+      }}
       className="bg-black text-white min-h-[46px] max-w-fit mx-auto my-4 border-2 border-black px-4 rounded-full hover:!bg-white hover:!text-black transition-all hover:scale-110 duration-700"
     >
       Show more
