@@ -12,9 +12,10 @@ const ThemeSwitcher = () => {
         color: "white",
         fontSize: "20px",
         cursor: "pointer",
-        border: "1px solid white",
+       
         minWidth: "35px",
         minHeight: "20px",
+        padding: "0px",
       }}
       onClick={toggleTheme}
     >

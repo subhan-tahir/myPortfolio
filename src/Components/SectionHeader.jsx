@@ -12,7 +12,7 @@ const SectionHeader = ({title}) => {
                     mode === "dark" ? "invert" : ""
                   }`}
                 />
-                <p className="flex gap-2">
+                <p className="flex gap-2 underline-style">
                   My
                   <span className="font-extrabold">{title}</span>
                 </p>

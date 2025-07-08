@@ -57,9 +57,31 @@ let buttons = [
   },
   {
     icon: FaGithub,
-    link: "https://github.com/m-subhan-tahir",
+    link: "https://github.com/subhan-tahir",
   },
 ];
+
+let footerContactLinks = [
+  {
+    name: "WhatsApp",
+    
+    link: "https://wa.me/+923702835443",
+  },
+  {
+    name: "Linkedin",
+    link: "https://www.linkedin.com/in/muhammad-subhan-tahir-bb9a20368",
+  },
+  {
+    name: "Email",
+    link: "mailto:subhantahir430@gmail.com",
+  },
+  {
+    name: "Github",
+    link: "https://github.com/subhan-tahir",
+  },
+];
+
+
 
 let mySkills = [
   {
@@ -146,6 +168,20 @@ let myWork = [
     link: "https://greener-pakistan.netlify.app/",
   },
   {
+    title: "Document Management System",
+    description:
+      "A complete and modern document management system. I have just build the frontend using Next js and Tailwind css.",
+    btn: "live Preview",
+    link: "https://platforma.nandev.cloud",
+  },
+  {
+    title: "I Own This One",
+    description:
+      "A complete and modern E-commerce website  built using Next js and Tailwind css. I have just build the frontend.",
+    btn: "live Preview",
+    link: "https://staging.shop.iownthisone.com/",
+  },
+  {
     title: "Devop360 Demo",
     description:
       "A complete and modern Devop360 website  built using HTML, CSS JavaScript, Bootstap and using gsap for interactivity and animations.",
@@ -229,4 +265,4 @@ let myWork = [
     link: "https://subhan-tahir.github.io/The-four-cs-1/",
   },
 ];
-export { buttons, mySkills, menu, myWork };
+export { buttons, mySkills, menu, myWork, footerContactLinks };

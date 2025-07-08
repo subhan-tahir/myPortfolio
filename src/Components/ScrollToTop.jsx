@@ -25,7 +25,7 @@ const ScrollToTop = () => {
   return isVisible ? (
     <motion.button
       onClick={scrollToTop}
-      className="fixed bottom-4 z-[1000] right-10 bg-black dark:bg-white hover:scale-105 text-primaryColor flex justify-center items-center text-xl w-[70px] h-[70px] rounded-full shadow-md"
+      className="fixed bottom-4 z-[1000] right-10 bg-black dark:bg-white hover:scale-105 text-primaryColor flex justify-center items-center text-xl w-[50px] h-[50px] rounded-xl shadow-md"
       aria-label="Scroll to top"
       title="Scroll to top"
       //   initial={{ opacity: 0, scale: 0.8 }}
