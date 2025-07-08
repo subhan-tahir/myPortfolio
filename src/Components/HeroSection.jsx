@@ -55,15 +55,11 @@ const HeroSection = () => {
             </div>
             <div className="">
               <p>
-                Front end Developer A motivated and enthusiastic frontend
-                developer with a strong foundation in creating visually
-                appealing and user-friendly web interfaces. Equipped with a
-                solid understanding of modern web technologies. Proficient in
-                HTML, CSS, JavaScript, Typescript, Bootstrap, Tailwind css, Node js, Express, MongoDB,  and React js for building the structure,
-                styling, and interactivity of web pages. Familiar with
-                responsive web design principles to ensure websites are
-                accessible and functional on various devices, including
-                desktops, tablets, and smartphones.
+                A passionate and results-driven <b> Frontend Web Developer with 3 years of hands-on experience </b> building responsive, interactive, and visually engaging web interfaces. Over the past year, I've also developed strong proficiency in <b>backend development,</b> working with the <b>MERN stack (MongoDB, Express.js, React.js, Node.js)</b> to build full-stack web applications.
+
+                Completed a <b>6-month internship at Devop360 Technology,</b> located in Gulshan-e-Jamal, where I gained real-world experience in professional web development environments. Skilled in crafting intuitive UIs using <b>HTML, CSS, JavaScript, TypeScript, Tailwind CSS, Bootstrap, and React.js, along with backend APIs and database operations using Node.js, Express, and MongoDB.</b>
+
+                Adept in responsive design, cross-browser compatibility, and modern development tools. Committed to writing clean, maintainable code and continuously improving through learning and collaboration.
               </p>
             </div>
             <div className="flex gap-2">
