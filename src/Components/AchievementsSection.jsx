@@ -7,7 +7,7 @@ import { useState } from "react";
 const AchievementsSection = () => {
   const [isLoading, setIsLoading] = useState(true);
   return (
-    <div id="achievements" className="my-14">
+    <div id="achievements" className="py-1">
 
     <Container>
       <SectionHeader title="Achievements" />

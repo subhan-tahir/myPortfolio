@@ -13,7 +13,7 @@ const Navbar = ({ mode, toggleTheme }) => {
   return (
     <>
       <div className={` bg-black shadow-xl  w-full flex justify-between items-center text-white md:px-4 px-2 py-6 relative `}>
-        <Container className={"flex justify-between items-center !px-0 md:gap-3"}>
+        <Container className={"flex justify-between items-center !px-0 md:gap-3 max-w-7xl"}>
           <div className="flex-1">
             <h1 className={"text-[20px] font-[600] text-nowrap"}>Muhammad Subhan.</h1>
           </div>

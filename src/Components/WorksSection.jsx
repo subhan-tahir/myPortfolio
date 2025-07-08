@@ -47,7 +47,7 @@ const WorkSection = () => {
 
   return (
     <Container className="max-w-[1570px]">
-      <div className="flex flex-col items-center relative mb-[80px]" id="work">
+      <div className="flex flex-col items-center relative my-14" id="work">
         <SectionHeader title="Work" />
         <div className="justify-center gap-8 col-span-4  w-full grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1">
           {/* Show the Skeleton if loading is true */}
