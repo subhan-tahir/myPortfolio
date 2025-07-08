@@ -5,6 +5,7 @@ import { motion, useScroll } from "framer-motion";
 import PortfolioPage from "./PortfolioPage";
 import ScrollToTop from "./Components/ScrollToTop";
 import { ThemeProvider } from "./context/ThemeContext"; // custom context provider
+import 'react-loading-skeleton/dist/skeleton.css';
 
 const App = () => {
   const { scrollYProgress } = useScroll();

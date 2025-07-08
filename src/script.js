@@ -34,8 +34,8 @@ let menu = [
     link: "#work",
   },
   {
-    li: "Achivements",
-    link: "#",
+    li: "Achievements",
+    link: "#achievements",
   },
   {
     li: "Contact",

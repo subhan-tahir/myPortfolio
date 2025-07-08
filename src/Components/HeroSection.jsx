@@ -8,7 +8,7 @@ const HeroSection = () => {
   return (
     <>
       <Container>
-        <div className="max-w-full flex gap-5 items-center justify-center flex-wrap-reverse md:flex-nowrap p-4 md:p-12 my-14">
+        <div className="max-w-full flex gap-5 items-center justify-center flex-wrap-reverse md:flex-nowrap  md:p-12 my-14">
           <motion.div
             initial={{
               x: -80,

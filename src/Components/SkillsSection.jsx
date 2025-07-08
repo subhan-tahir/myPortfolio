@@ -14,7 +14,7 @@ const SkillsSection = () => {
   return (
     <div
       ref={ref}
-      className="items-center flex flex-col gap-2 max-w-7xl mx-auto sm:mt-28 p-4"
+      className="items-center flex flex-col gap-2 max-w-7xl mx-auto my-14 p-4"
       id="skills"
     >
       {/*header */}
