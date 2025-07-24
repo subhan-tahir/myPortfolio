@@ -75,11 +75,13 @@ const ContactFooter = () => {
           <div className="py-6 px-12 bg-white rounded-lg">
             <div className="flex sm:flex-row flex-col gap-4 sm:text-4xl text-2xl font-extrabold">
               {
-                footerContactLinks.map((item,index) => (
-                  <a href={item.link} target="_blank" rel="noopener noreferrer" key={index}>
-                    <h1 className="font-semibold">{item.name}</h1>
-                  </a>
-                ))
+                footerContactLinks.map((item, index) => {
+                  return (
+                    <a href={item.link} target="_blank" rel="noopener noreferrer" key={index}>
+                      <h1 className="font-semibold text-black">{item.name}</h1>
+                    </a>
+                  )
+                })
               }
              
              

@@ -11,11 +11,13 @@ import { motion } from "framer-motion";
 import { useMotionValue, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Project from "./Project";
+import TabsBar from "./TabsBar";
 
 const WorkSection = () => {
   const { mode } = useContext(ThemeContext);
   const [showProjects, setShowProjects] = useState(6);
-  const [loading, setLoading] = useState(false); // Add loading state
+  const [loading, setLoading] = useState(false);
+  const [activeTab, setActiveTab] = useState("All") // Add loading state
   const cardRef = useRef(null);
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
@@ -48,37 +50,18 @@ const WorkSection = () => {
   return (
     <Container className="max-w-[1570px]">
       <div className="flex flex-col items-center relative my-14" id="work">
-        <SectionHeader title="Work" />
-        <div className="justify-center gap-8 col-span-4  w-full grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1">
-          {/* Show the Skeleton if loading is true */}
-          {/* {loading
-            ? [...Array(3)].map((_, index) => (
-                <div
-                  key={index}
-                  className="group relative sm:w-[350px] sm:h-[350px] h-auto rounded-xl border border-white/10  px-8 py-14 shadow-xl"
-                >
-                  <Skeleton
-                    variant="text"
-                    width="80%"
-                    height={40}
-                    className="mb-2"
-                  />
-                  <Skeleton variant="text" width="100%" height={20} />
-                  <Skeleton
-                    variant="rectangular"
-                    width="100%"
-                    height={50}
-                    className="mt-4"
-                  />
-                </div>
-              )):*/
-            myWork.slice(0, showProjects).map((project, index) =>
-             <Project key={index} project={project} index={index} />
-
-
-            )
+        <SectionHeader title="Work" className="!my-5" />
+        <TabsBar setActiveTab={setActiveTab} activeTab={activeTab} />
+        <div className="justify-center gap-8 col-span-4 w-full grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1">
+          {
+            (activeTab === "All" ? myWork : myWork.filter(p => p.category === activeTab))
+              .slice(0, showProjects)
+              .map((project, index) => (
+                <Project key={index} project={project} index={index} />
+              ))
           }
         </div>
+
 
         {/* ShowMore Button */}
         <ShowMore
