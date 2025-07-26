@@ -20,7 +20,9 @@ body {
     color: var(--accent);
     padding-bottom: 100px;
   }
-  
+  html {
+    scroll-behavior: smooth;
+  }
   * {
     font-family: sofia-pro, sans-serif;
     font-weight: 400;
